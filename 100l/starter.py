@@ -2,12 +2,8 @@
 
 import sys, os
 import asyncio
-#, requests, json
-#from dotenv import load_dotenv
 from flask import *  #Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-#from model_constructor.models import *
 from img_chk import to_chk
 
 #load_dotenv('.env1')
@@ -17,7 +13,7 @@ from img_chk import to_chk
 #print(os.environ.get('tag1'))
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///tskdlr.db"
+#app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///tskdlr.db"
 #db = SQLAlchemy(app)
 
 #class TehZadacha(db.Model):
@@ -63,9 +59,6 @@ def file_loader():
 #    await asyncio.sleep(1)
 #    return 'done'
 
-async def main():
+if __name__ == '__main__':
     app.run(debug=True, port=5001)
 
-if __name__ == '__main__':
-    #print('started ...')
-    asyncio.run(main())

@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" >
   <!--integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"-->
   {% block head %}
-        <title>TskDlr - {% block title %}Testing mode{% endblock %}</title>
+        <title> Тестирование изображений {% endblock %}</title>
   {% endblock %}
   <meta content="{{ description }}" name="description">
   <meta content="{{ keywords }}" name="keywords">
@@ -41,7 +41,7 @@
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">TskDlr</a>
+    <a class="navbar-brand" href="#">Главная</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,7 +51,7 @@
           <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}" >Главная</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('file_loader') }}">Zagruzit</a>
+          <a class="nav-link" href="{{ url_for('file_loader') }}">Загрузить</a>
         </li>
       </ul>
     <form class="d-flex" role="search">
